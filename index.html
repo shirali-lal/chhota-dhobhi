@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chhota Dhobhi | Affordable Laundry & Dry Cleaning</title>
+  <style>
+    :root {
+      --primary: #2d9cdb;
+      --secondary: #27ae60;
+      --light: #f9fcff;
+      --dark: #1f2a37;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      padding: 3rem 2rem;
+      text-align: center;
+      background: #eaf6ff;
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      background: var(--primary);
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .card h4 {
+      margin-bottom: 0.5rem;
+    }
+
+    .price {
+      color: var(--secondary);
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 500;
+    }
+
+    form input, form select {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.4rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🧺 Chhota Dhobhi</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#pickup">Schedule Pickup</a>
+      <a href="#track">Track Order</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Clean Clothes. Zero Hassle.</h2>
+    <p>Affordable laundry & dry-cleaning service designed for students and working professionals. Doorstep pickup & delivery.</p>
+    <button class="btn">Book a Pickup</button>
+  </div>
+
+  <section id="services">
+    <h3>Our Services</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Wash & Fold</h4>
+        <p>Everyday laundry, washed hygienically.</p>
+      </div>
+      <div class="card">
+        <h4>Wash & Iron</h4>
+        <p>Perfectly cleaned and neatly pressed.</p>
+      </div>
+      <div class="card">
+        <h4>Dry Cleaning</h4>
+        <p>Special care for premium garments.</p>
+      </div>
+      <div class="card">
+        <h4>Express Service</h4>
+        <p>Same-day or next-day delivery options.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h3>Simple Pricing</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Wash & Fold</h4>
+        <p class="price">₹60 / kg</p>
+      </div>
+      <div class="card">
+        <h4>Wash & Iron</h4>
+        <p class="price">₹90 / kg</p>
+      </div>
+      <div class="card">
+        <h4>Dry Cleaning</h4>
+        <p class="price">Starting ₹120</p>
+      </div>
+      <div class="card">
+        <h4>Student Combo</h4>
+        <p class="price">₹399 / week</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pickup">
+    <h3>Schedule a Pickup</h3>
+    <form>
+      <label>Name</label>
+      <input type="text" placeholder="Your name" />
+
+      <label>Phone</label>
+      <input type="tel" placeholder="Mobile number" />
+
+      <label>Service Type</label>
+      <select>
+        <option>Wash & Fold</option>
+        <option>Wash & Iron</option>
+        <option>Dry Cleaning</option>
+      </select>
+
+      <label>Pickup Date</label>
+      <input type="date" />
+
+      <button class="btn" style="margin-top:1.5rem;width:100%;">Confirm Pickup</button>
+    </form>
+  </section>
+
+  <section id="track">
+    <h3>Track Your Order</h3>
+    <form>
+      <label>Order ID</label>
+      <input type="text" placeholder="Enter Order ID" />
+      <button class="btn" style="margin-top:1rem;width:100%;">Track Order</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Chhota Dhobhi | Clean • Affordable • Reliable</p>
+  </footer>
+
+</body>
+</html>
